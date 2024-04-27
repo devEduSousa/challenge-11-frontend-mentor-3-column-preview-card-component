@@ -46,13 +46,15 @@ p {
 }
 
 .links {
-    width: 144px;
+    width: 145px;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     text-decoration: none;
     background-color: #f2f2f2;
     padding: 15px 30px;
     border-radius: 50px;
+    transition: .3s;
+    border: 1px solid #f2f2f2;
 }
 
 .container.sedans-container {
@@ -132,6 +134,16 @@ footer .footer-link {
 
     .container.luxury-container {
         border-radius: 0 10px 10px 0;
+    }
+
+    .links:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .container.sedans-container .links.sedans-link:hover,
+    .container.suvs-container .links.suvs-link:hover,
+    .container.luxury-container .links.luxury-link:hover {
+        color: rgb(242, 242, 242, 1);
     }
 
     footer {

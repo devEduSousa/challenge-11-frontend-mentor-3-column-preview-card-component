@@ -20,13 +20,15 @@ main {
 
 .container {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
     width: 54px;
 }
 
-h2 {
+h1 {
     font-family: "Big Shoulders Display", sans-serif;
     color: #f2f2f2;
     font-size: 32px;
@@ -40,10 +42,11 @@ p {
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 30px;
+    flex: 1;
 }
 
 .links {
-    display: inline-block;
+    width: 144px;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     text-decoration: none;
@@ -97,10 +100,6 @@ footer .footer-link {
     main {
         max-width: 80%;
     }
-
-    .container.luxury-container p {
-        margin-right: 5px;
-    }
 }
 
 @media(min-width:420px) {
@@ -135,18 +134,8 @@ footer .footer-link {
         border-radius: 0 10px 10px 0;
     }
 
-    .container.luxury-container p {
-        margin-right: 0;
-    }
-
     footer {
         position: absolute;
         bottom: 0;
-    }
-}
-
-@media(min-width: 1400px) {
-    .container.luxury-container p {
-        margin-right: 20px;
     }
 }
